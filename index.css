@@ -132,6 +132,17 @@ img {
   color: white;
 }
 
+.icons {
+    align-self: center;
+    font-size: 3em;
+    margin-top: -.6em;
+    margin-bottom: -.5em;
+}
+
+.icons a {
+    text-decoration: none;
+}
+
 /* END hero styes */
 
 /* START about styles */
@@ -263,6 +274,7 @@ footer {
 footer h3 {
     color: white;
     padding: 2em;
+    margin-bottom: -1em;
 }
 
 /*  Start desktop version styles  */

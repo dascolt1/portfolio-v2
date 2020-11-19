@@ -58,11 +58,11 @@ img {
     height: 100%;
     top: 0;
     left: 0;
-    background: url('assets/hero.jpg') no-repeat fixed; 
-    -webkit-background-size: cover;
+    background: url('assets/hero.jpg') no-repeat center fixed; 
+    -webkit-background-size: auto;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100vw 100vh;
     filter: brightness(.3) contrast(1.2);
 }
 

@@ -1,0 +1,372 @@
+:root {
+    --background-color: #18191b;
+    --section-background: #101214;
+    --red: #FF3030;
+    --contrast-background: #0d0e10;
+    --nav-background: rgba(10, 10,20, .8);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: var(--nav-background);
+    opacity: .9;
+}
+
+.navbar a:hover {
+    color: #EE0000 !important;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+    transition: .3s ease-out;
+    margin-right: 2em;
+    padding-top: 1.5em;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/*  START hero styles */
+
+#hero {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    min-width: 100%; 
+    min-height: 90%;
+}
+
+#hero:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('assets/hero.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: brightness(.3) contrast(1.2);
+}
+
+#hero .content {
+    color: var(--logo-color);
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lora', serif;
+}
+
+#hero .content h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    width: 100%;
+    color: var(--red);
+    line-height: 6rem;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    max-width: 100vw;
+}
+
+#hero .content h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: white;
+    line-height: 2rem;
+    align-self: center;
+}
+
+#hero .content h3:after {
+    content: '';
+    width: 70%;
+    margin: 2rem 15%;
+    display: block;
+    border-bottom: 4px solid var(--red);
+}
+
+.view-work {
+  margin-top: 1.5em;
+  background-color: transparent;
+  padding: .7em;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 2em;
+  border: 2px solid; 
+  text-transform: uppercase;
+  border-color: white;
+  align-self: center;
+  transition: .2s linear;
+}
+
+.view-work:hover {
+    border-color: var(--red);
+    text-decoration: none;
+    color: white;
+}
+
+.view-work {
+  text-decoration: none;
+  color: white;
+}
+
+/* END hero styes */
+
+/* START about styles */
+
+#about {
+    background-color: var(--section-background);
+    max-width: 100vw;
+}
+
+#about h2{
+    color: white;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+#about .content {
+    background-color: var(--contrast-background);
+    margin: 3em;
+    padding: 2em;
+    line-height: 1.9rem;
+}
+
+#about .content p{
+   color: white;
+   font-size: 1.5em;
+}
+
+#about .technologies {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 1em;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+#about .technologies .my-card{
+    align-self: center;
+    background-color: var(--contrast-background);
+    padding: 1em;
+    width: 100%;
+}
+
+#about .technologies .my-card h2{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 2rem;
+}
+
+#about .technologies .my-card .nested-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-self: center;
+    align-content: center;
+    font-size: 3em;
+}
+/* END about styles */
+
+/* START portfolio styles */
+#work {
+    background-color: var(--contrast-background);
+    padding: 1em;
+}
+
+#work .freelance img {
+    padding-top: 1em;
+}
+
+#work .hobby img {
+    padding-top: 1em;
+}
+
+#work .hobby .connected-img{
+   height: 25%;
+   width: 25%;
+   display: block;
+   margin: 0 auto;
+}
+
+#work h2 {
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+}
+
+.card {
+    box-shadow: 4px 4px var(--background-color);
+    margin-top: 1em;
+}
+
+.card a {
+    margin-top: -1em;
+}
+
+.card-body {
+    background-color: var(--background-color);
+    color: white;
+    line-height: 2rem;
+}
+
+.read-more {
+    color: var(--red);
+}
+
+.read-more:hover {
+    color: var(--red);
+    transition: .2s linear;
+}
+
+.github {
+    color: gray;
+}
+
+.github:hover {
+    color: gray;
+    transition: .2s linear;
+}
+
+
+footer {
+    background-color: var(--section-background);
+    text-align: center;
+}
+
+footer h3 {
+    color: white;
+    padding: 2em;
+}
+
+/*  Start desktop version styles  */
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  #hero .content h1 {
+    font-size: 5.5rem;
+    font-weight: 600;
+    width: 100%;
+    color: var(--red);
+    line-height: 6rem;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    max-width: 100vw;
+}
+
+#hero .content h3 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: white;
+    line-height: 2rem;
+    align-self: center;
+}
+
+#hero .content h3:after {
+    content: '';
+    width: 70%;
+    margin: 2rem 15%;
+    display: block;
+    border-bottom: 4px solid var(--red);
+}
+
+#about .content {
+    margin: 1em 3em;
+    padding: 2em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#about .technologies {
+    margin: 0em 3em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 1em;
+    align-self: center;
+    justify-content: space-around;
+    padding-bottom: 0em;
+}
+
+#about .technologies .my-card{
+    align-self: start;
+    background-color: var(--contrast-background);
+    padding: 1em;
+}
+
+#about .technologies .my-card h2{
+    text-align: center;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+#about .technologies .my-card .nested-icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+#work {
+    background-color: var(--contrast-background);
+    margin-top: -15em;
+}
+
+#work .freelance {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: repeat(2, 2fr);
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+#work .freelance img{
+   height: 100%;
+}
+
+#work .hobby {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: repeat(2, 2fr);
+    grid-gap: 1em;
+    padding: 2em;
+    padding-bottom: 6em;
+    align-items: start;
+    justify-content: center;
+}
+
+#work .hobby .connected-img{
+   height: 25%;
+   width: 25%;
+}
+
+}

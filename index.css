@@ -62,7 +62,7 @@ img {
     -webkit-background-size: auto;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 100vw 100vh;
+    background-size: 100vw 1000px;
     filter: brightness(.3) contrast(1.2);
 }
 

@@ -58,7 +58,7 @@ img {
     height: 100%;
     top: 0;
     left: 0;
-    background: url('assets/hero.jpg') no-repeat bottom fixed; 
+    background: url('assets/hero.jpg') no-repeat center top fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -134,12 +134,16 @@ img {
 
 .icons {
     align-self: center;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: -.6em;
     margin-bottom: -.5em;
 }
 
 .icons a {
+    text-decoration: none;
+}
+
+.footer-icons a {
     text-decoration: none;
 }
 
@@ -269,12 +273,18 @@ img {
 footer {
     background-color: var(--section-background);
     text-align: center;
+    padding-bottom: 2.5em;
 }
 
 footer h3 {
     color: white;
     padding: 2em;
     margin-bottom: -1em;
+}
+
+.footer-icons {
+    align-self: center;
+    font-size: 2em;
 }
 
 /*  Start desktop version styles  */
